@@ -807,7 +807,6 @@ button {
 
 .modal-form--field {
   position: relative;
-  /* display: block; */
 
   color: var(--text-color);
 
@@ -837,6 +836,8 @@ button {
   padding-right: 10px;
   padding-bottom: 12px;
   padding-left: 42px;
+
+  transition: border-color 250ms var(--animation-cubic-bezier);
 }
 
 .modal-input-svg {
@@ -856,6 +857,14 @@ button {
   fill: var(--hover-color);
 }
 
+.modal-form--input:hover {
+  border-color: var(--hover-color);
+}
+
+.modal-form--field:hover .modal-input-svg {
+  fill: var(--hover-color);
+}
+
 .modal-form--textarea {
   margin-bottom: 20px;
 
@@ -867,6 +876,11 @@ button {
   height: 120px;
 
   resize: none;
+  transition: border-color 250ms var(--animation-cubic-bezier);
+}
+
+.modal-form--textarea:hover {
+  border-color: var(--hover-color);
 }
 
 .modal-form--textarea::placeholder {
@@ -878,6 +892,8 @@ button {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+
+  cursor: pointer;
 }
 
 .modal-form--checkbox {
