@@ -871,9 +871,11 @@ button {
   fill: var(--hover-color);
 }
 
-.modal-form--textarea {
+.textarea {
   margin-bottom: 20px;
+}
 
+.modal-form--textarea {
   padding-top: 12px;
   padding-right: 16px;
   padding-bottom: 12px;
