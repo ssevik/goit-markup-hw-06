@@ -591,6 +591,11 @@ button {
   margin-bottom: 20px;
   color: var(--main-color);
 }
+
+.address{
+  margin-bottom: 9px;
+}
+
 .item:not(:last-child) {
   margin-bottom: 9px;
 }
